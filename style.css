@@ -1,0 +1,86 @@
+body {
+    background-image: url(/src/img1.akspic.ru-otrazhenie-oblako-rok-gorizont-poberezhe-3840x2400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 18px;
+}
+
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background: grey;
+}
+
+
+
+
+.btn.bg-orange {
+    background: orange;
+}
+
+
+
