@@ -93,8 +93,11 @@ document.querySelector('.buttons').onclick = (event) => {
         out.textContent = a;
         console.table(a, b, sign);
     }
-
-
+    // +/- sign
+    if (key === '+/-') {
+        a = -a;
+        out.textContent = a;
+    }
 
 }
 
