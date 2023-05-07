@@ -61,6 +61,7 @@ document.querySelector('.buttons').onclick = (event) => {
 
     if (action.includes(key)) {
         sign = key;
+        out.textContent = a;
         console.table(a, b, sign);
         return;
     }
