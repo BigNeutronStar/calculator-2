@@ -95,8 +95,14 @@ document.querySelector('.buttons').onclick = (event) => {
     }
     // +/- sign
     if (key === '+/-') {
-        a = -a;
-        out.textContent = a;
+        if (a !== '' && b !== '') {
+            b = -b;
+            out.textContent = b;
+        }
+        if (a !== '' && b === '') {
+            a = -a;
+            out.textContent = a;
+        }
     }
 
 }
